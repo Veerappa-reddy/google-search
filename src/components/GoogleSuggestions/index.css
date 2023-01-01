@@ -1,0 +1,40 @@
+.app-container {
+  background-color: #fff;
+  box-shadow: 1px 2px 2px 2px #bfbfbf;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.google {
+  width: 305px;
+  margin-bottom: 30px;
+}
+.google-search-container {
+  width: 35%;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  max-height: 700px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.search-input-container {
+  display: flex;
+  margin-left: 20px;
+}
+.icon {
+  width: 15px;
+}
+.input-element {
+  width: 30%;
+  border-color: none;
+  border: 0px solid #fff;
+  flex-grow: 1;
+  margin-left: 10px;
+  outline: none;
+}
+.ul-type {
+  list-style-type: none;
+}

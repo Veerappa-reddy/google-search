@@ -1,0 +1,14 @@
+.suggestion-item {
+  display: flex;
+}
+.list-item {
+  /* list-style-type: none; */
+}
+.arrow {
+  width: 15px;
+  height: 15px;
+  margin-top: 19px;
+}
+.paragraph {
+  flex-grow: 1;
+}
