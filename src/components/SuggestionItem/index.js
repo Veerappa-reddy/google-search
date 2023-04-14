@@ -1,26 +1,29 @@
 import './index.css'
 
-const SuggsetionItem = props => {
-  const {itemsDetails, addSuggestion} = props
-  const {suggestion} = itemsDetails
+const SuggestionItem = props => {
+  const {suggestionDetails, updateSearchInput} = props
+  const {suggestion} = suggestionDetails
 
-  const onSuggestion = () => {
-    addSuggestion(suggestion)
+  const onClickSuggestion = () => {
+    updateSearchInput(suggestion)
   }
 
   return (
-    <li className="list-item">
-      <div className="suggestion-item">
-        <p className="paragraph">{suggestion}</p>
+    <li className="suggestion-item">
+      <p className="suggestion-text">{suggestion}</p>
+      <button
+        type="button"
+        className="arrow-button"
+        onClick={onClickSuggestion}
+      >
         <img
           src="https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png"
-          className="arrow"
           alt="arrow"
-          onClick={onSuggestion}
+          className="arrow"
         />
-      </div>
+      </button>
     </li>
   )
 }
 
-export default SuggsetionItem
+export default SuggestionItem
